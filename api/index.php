@@ -1,656 +1,472 @@
-```php
 <?php
-
-$name = "Mariam Tahayekt";
-$job = "Développeuse Web";
-
 $projects = [
     [
-        "title" => "QuickAnnonce",
-        "description" => "Application web de gestion et publication des annonces.",
-        "image" => "public/image/quickannonce.png",
-        "doc" => "public/doc/quickannonce.pdf",
-        "tech" => "PHP • MySQL • JavaScript"
-    ],
-    [
-        "title" => "Annovia",
-        "description" => "Plateforme web moderne dédiée aux annonces.",
-        "image" => "public/image/annovia.png",
-        "doc" => "public/doc/annovia.pdf",
-        "tech" => "PHP • MySQL • Bootstrap"
-    ],
-    [
-        "title" => "Portfolio",
-        "description" => "Portfolio professionnel présentant mes compétences et réalisations.",
-        "image" => "public/image/mariam.jpg",
-        "doc" => "public/doc/portfolio.pdf",
-        "tech" => "PHP • HTML • CSS"
+        "title" => "TD 1 - UML",
+        "category" => "UML",
+        "image" => "public/image/td1.png",
+        "doc" => "public/doc/td1.pdf"
     ]
 ];
 
-$skills = ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"];
-
+$skills = [
+    "HTML / CSS",
+    "PHP",
+    "JavaScript",
+    "MySQL",
+    "UML",
+    "Git & GitHub"
+];
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title><?= $name ?> | Portfolio</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-<style>
-
-:root{
-    --primary:#2563eb;
-    --secondary:#7c3aed;
-    --dark:#0f172a;
-    --text:#64748b;
-    --light:#f8fafc;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Inter,sans-serif;
-    color:var(--text);
-    background:white;
-}
-
-section{
-    padding:90px 0;
-}
-
-h1,h2,h3,h4{
-    color:var(--dark);
-    font-weight:700;
-}
-
-/* NAVBAR */
-
-.navbar{
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(10px);
-    box-shadow:0 2px 15px rgba(0,0,0,.05);
-}
-
-.navbar-brand{
-    font-size:25px;
-    font-weight:800;
-    color:var(--dark);
-}
-
-.navbar-brand span{
-    color:var(--primary);
-}
-
-.nav-link{
-    color:var(--dark)!important;
-    font-weight:500;
-    margin-left:15px;
-}
-
-.nav-link:hover{
-    color:var(--primary)!important;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    background:
-    linear-gradient(135deg,#fff,#eff6ff);
-}
-
-.hero h1{
-    font-size:clamp(42px,6vw,70px);
-}
-
-.hero h1 span{
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.hero h2{
-    font-size:25px;
-    margin:20px 0;
-}
-
-.hero p{
-    max-width:600px;
-    line-height:1.8;
-}
-
-.btn-main{
-    display:inline-block;
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:white;
-    padding:13px 25px;
-    border-radius:10px;
-    margin-top:15px;
-    transition:.3s;
-}
-
-.btn-main:hover{
-    color:white;
-    transform:translateY(-4px);
-}
-
-.hero-img{
-    width:330px;
-    height:330px;
-    object-fit:cover;
-    border-radius:50%;
-    border:7px solid white;
-    box-shadow:0 20px 50px rgba(37,99,235,.2);
-}
-
-/* TITLES */
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.section-title span{
-    color:var(--primary);
-}
-
-/* ABOUT */
-
-#about{
-    background:var(--light);
-}
-
-.about-box{
-    background:white;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:0 10px 35px rgba(0,0,0,.06);
-}
-
-.about-box p{
-    line-height:1.8;
-}
-
-/* SKILLS */
-
-.skill{
-    padding:20px;
-    background:white;
-    border:1px solid #e2e8f0;
-    border-radius:12px;
-    text-align:center;
-    transition:.3s;
-}
-
-.skill:hover{
-    transform:translateY(-6px);
-    border-color:var(--primary);
-}
-
-.skill i{
-    font-size:30px;
-    color:var(--primary);
-}
-
-/* PROJECTS */
-
-#projects{
-    background:var(--light);
-}
-
-.project{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    height:100%;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
-    transition:.4s;
-}
-
-.project:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
-}
-
-.project img{
-    width:100%;
-    height:210px;
-    object-fit:cover;
-    transition:.4s;
-}
-
-.project:hover img{
-    transform:scale(1.05);
-}
-
-.project-content{
-    padding:25px;
-}
-
-.project-content p{
-    line-height:1.6;
-}
-
-.tech{
-    color:var(--primary);
-    font-size:13px;
-    font-weight:600;
-    margin:15px 0;
-}
-
-.project-link{
-    color:var(--primary);
-    font-weight:600;
-}
-
-.project-link:hover{
-    color:var(--secondary);
-}
-
-/* CONTACT */
-
-#contact{
-    background:var(--dark);
-    color:white;
-}
-
-#contact h2{
-    color:white;
-}
-
-.contact-box{
-    max-width:650px;
-    margin:auto;
-}
-
-.form-control{
-    margin-bottom:15px;
-    padding:13px;
-    border-radius:9px;
-}
-
-/* FOOTER */
-
-footer{
-    background:#020617;
-    color:#94a3b8;
-    text-align:center;
-    padding:25px;
-}
-
-.social a{
-    color:white;
-    font-size:22px;
-    margin:0 8px;
-}
-
-.social a:hover{
-    color:#60a5fa;
-}
-
-/* ANIMATION */
-
-.reveal{
-    opacity:0;
-    transform:translateY(25px);
-    transition:.7s;
-}
-
-.reveal.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-@media(max-width:768px){
-
-    .hero{
-        text-align:center;
-        padding-top:120px;
-    }
-
-    .hero p{
-        margin:auto;
-    }
-
-    .hero-img{
-        width:250px;
-        height:250px;
-        margin-top:50px;
-    }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mariam Tahayekt | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #172033;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,.08);
+        }
+
+        .navbar-brand {
+            color: #2563eb !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #172033 !important;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: #2563eb !important;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #eff6ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 18px;
+        }
+
+        .profile {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,.15);
+        }
+
+        .btn-main {
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-main:hover {
+            background: #172033;
+            color: white;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 0;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .title h2 {
+            font-weight: bold;
+        }
+
+        .title span {
+            color: #2563eb;
+        }
+
+        /* SKILLS */
+        .skill {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.06);
+        }
+
+        .skill:hover {
+            transform: translateY(-4px);
+            transition: .3s;
+        }
+
+        /* PROJECTS */
+        .project {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+            transition: .3s;
+            height: 100%;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+        }
+
+        .project img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content small {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .project-content h3 {
+            margin: 8px 0 18px;
+        }
+
+        .btn-doc {
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 7px;
+            display: inline-block;
+        }
+
+        .btn-doc:hover {
+            background: #172033;
+            color: white;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #172033;
+            color: white;
+            text-align: center;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .profile {
+                width: 220px;
+                height: 220px;
+                margin-top: 30px;
+            }
+        }
+    </style>
 </head>
-
 
 <body>
 
 <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
 
-<nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">
+            Mariam Tahayekt
+        </a>
 
-<div class="container">
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            ☰
+        </button>
 
-<a class="navbar-brand" href="#">
-Mariam<span>.</span>
-</a>
+        <div class="collapse navbar-collapse" id="menu">
 
-<button class="navbar-toggler"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
+            <ul class="navbar-nav ms-auto">
 
-<span class="navbar-toggler-icon"></span>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Accueil</a>
+                </li>
 
-</button>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À propos</a>
+                </li>
 
-<div class="collapse navbar-collapse" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Compétences</a>
+                </li>
 
-<ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projets</a>
+                </li>
 
-<li><a class="nav-link" href="#home">Accueil</a></li>
-<li><a class="nav-link" href="#about">À propos</a></li>
-<li><a class="nav-link" href="#skills">Compétences</a></li>
-<li><a class="nav-link" href="#projects">Projets</a></li>
-<li><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
 
-</ul>
+            </ul>
 
-</div>
-</div>
+        </div>
+    </div>
 </nav>
 
 
 <!-- HERO -->
-
 <section class="hero" id="home">
 
-<div class="container">
+    <div class="container">
 
-<div class="row align-items-center">
+        <div class="row align-items-center">
 
-<div class="col-lg-7 reveal">
+            <div class="col-md-7">
 
-<p>Bonjour, je suis</p>
+                <p>Bonjour, je suis</p>
 
-<h1>
-<?= $name ?>
-<br>
-<span><?= $job ?></span>
-</h1>
+                <h1>
+                    Mariam <span>Tahayekt</span>
+                </h1>
 
-<h2>Créative • Passionnée • Développeuse</h2>
+                <h3>Développeuse Web</h3>
 
-<p>
-Je conçois des sites web et des applications modernes,
-simples et adaptés aux besoins des utilisateurs.
-</p>
+                <p>
+                    Étudiante passionnée par le développement web,
+                    la programmation et la conception des systèmes.
+                </p>
 
-<a href="#projects" class="btn-main">
-Découvrir mes projets
-<i class="bi bi-arrow-right"></i>
-</a>
+                <a href="#projects" class="btn-main">
+                    Voir mes projets
+                </a>
 
-</div>
+            </div>
 
+            <div class="col-md-5 text-center">
 
-<div class="col-lg-5 text-center reveal">
+                <img src="public/image/mariam.jpg"
+                     class="profile"
+                     alt="Mariam Tahayekt">
 
-<img src="public/image/mariam.jpg"
-class="hero-img"
-alt="<?= $name ?>">
+            </div>
 
-</div>
+        </div>
 
-</div>
-</div>
+    </div>
+
 </section>
 
 
 <!-- ABOUT -->
-
 <section id="about">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-À <span>propos</span>
-</h2>
+        <div class="title">
+            <h2>À <span>propos</span></h2>
+        </div>
 
-<div class="about-box reveal">
+        <div class="row justify-content-center">
 
-<h3>Qui suis-je ?</h3>
+            <div class="col-md-8 text-center">
 
-<p>
-Je suis <?= $name ?>, développeuse web passionnée
-par la création de solutions digitales modernes.
-</p>
+                <p>
+                    Je suis Mariam Tahayekt, étudiante et passionnée
+                    par le développement web et les nouvelles technologies.
+                </p>
 
-<p>
-J'aime transformer les idées en projets fonctionnels,
-esthétiques et faciles à utiliser.
-</p>
+                <p>
+                    Je m'intéresse particulièrement à la création
+                    d'applications web, aux bases de données et à UML.
+                </p>
 
-</div>
+            </div>
 
-</div>
+        </div>
+
+    </div>
+
 </section>
 
 
 <!-- SKILLS -->
-
 <section id="skills">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-Mes <span>compétences</span>
-</h2>
+        <div class="title">
+            <h2>Mes <span>compétences</span></h2>
+        </div>
 
-<div class="row g-4">
+        <div class="row">
 
-<?php foreach($skills as $skill): ?>
+            <?php foreach ($skills as $skill): ?>
 
-<div class="col-md-4 col-6">
+                <div class="col-md-4">
+                    <div class="skill">
+                        <?= $skill ?>
+                    </div>
+                </div>
 
-<div class="skill reveal">
+            <?php endforeach; ?>
 
-<i class="bi bi-code-slash"></i>
+        </div>
 
-<h5 class="mt-3">
-<?= $skill ?>
-</h5>
+    </div>
 
-</div>
-
-</div>
-
-<?php endforeach; ?>
-
-</div>
-</div>
 </section>
 
 
 <!-- PROJECTS -->
-
 <section id="projects">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-Mes <span>projets réalisés</span>
-</h2>
+        <div class="title">
 
-<div class="row g-4">
+            <h2>Mes <span>projets & TD</span></h2>
 
-<?php foreach($projects as $project): ?>
+            <p>
+                Découvrez mes travaux pratiques et mes réalisations.
+            </p>
 
-<div class="col-lg-4 col-md-6">
+        </div>
 
-<div class="project reveal">
+        <div class="row g-4">
 
-<img src="<?= $project['image'] ?>"
-alt="<?= $project['title'] ?>">
+            <?php foreach ($projects as $project): ?>
 
-<div class="project-content">
+                <div class="col-md-6 col-lg-4">
 
-<h3>
-<?= $project['title'] ?>
-</h3>
+                    <div class="project">
 
-<p>
-<?= $project['description'] ?>
-</p>
+                        <img src="<?= $project['image'] ?>"
+                             alt="<?= $project['title'] ?>">
 
-<div class="tech">
-<?= $project['tech'] ?>
-</div>
+                        <div class="project-content">
 
-<a href="<?= $project['doc'] ?>"
-target="_blank"
-class="project-link">
+                            <small>
+                                <?= $project['category'] ?>
+                            </small>
 
-Voir le document
-<i class="bi bi-arrow-up-right"></i>
+                            <h3>
+                                <?= $project['title'] ?>
+                            </h3>
 
-</a>
+                            <a href="<?= $project['doc'] ?>"
+                               target="_blank"
+                               class="btn-doc">
 
-</div>
-</div>
+                                Voir le document →
 
-</div>
+                            </a>
 
-<?php endforeach; ?>
+                        </div>
 
-</div>
-</div>
+                    </div>
+
+                </div>
+
+            <?php endforeach; ?>
+
+        </div>
+
+    </div>
+
 </section>
 
 
 <!-- CONTACT -->
+<section id="contact" class="contact">
 
-<section id="contact">
+    <div class="container">
 
-<div class="container">
+        <h2>Contactez-moi</h2>
 
-<h2 class="section-title">
-Me <span>contacter</span>
-</h2>
+        <p>
+            Pour toute question, collaboration ou opportunité.
+        </p>
 
-<div class="contact-box reveal">
+        <a href="mailto:mariam@email.com"
+           class="btn btn-light">
 
-<form>
+            Envoyer un email
 
-<input
-type="text"
-class="form-control"
-placeholder="Votre nom"
-required>
+        </a>
 
-<input
-type="email"
-class="form-control"
-placeholder="Votre email"
-required>
+    </div>
 
-<textarea
-class="form-control"
-rows="5"
-placeholder="Votre message"
-required></textarea>
-
-<button class="btn-main w-100 border-0">
-Envoyer le message
-<i class="bi bi-send"></i>
-</button>
-
-</form>
-
-</div>
-
-</div>
 </section>
 
 
 <!-- FOOTER -->
-
 <footer>
 
-<div class="social mb-3">
-
-<a href="#">
-<i class="bi bi-github"></i>
-</a>
-
-<a href="#">
-<i class="bi bi-linkedin"></i>
-</a>
-
-<a href="#">
-<i class="bi bi-instagram"></i>
-</a>
-
-</div>
-
-<p>
-© <?= date("Y") ?> <?= $name ?> — Tous droits réservés.
-</p>
+    © <?= date("Y") ?> Mariam Tahayekt — Portfolio
 
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-
-/* Animation au scroll */
-
-const elements = document.querySelectorAll(".reveal");
-
-function reveal(){
-
-    elements.forEach(el => {
-
-        if(el.getBoundingClientRect().top <
-           window.innerHeight - 80){
-
-            el.classList.add("show");
-
-        }
-
-    });
-
-}
-
-window.addEventListener("scroll", reveal);
-reveal();
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
 
 </body>
 </html>
-```
