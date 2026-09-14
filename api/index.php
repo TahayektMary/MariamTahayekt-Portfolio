@@ -777,7 +777,7 @@ header("Content-Type: text/html; charset=UTF-8");
             <div class="hero-image-wrapper">
                 <div class="hero-image-card">
                     <!-- Relative route pointing directly to public/image/mariam.jpg -->
-                    <img src="../public/image/mariam.jpg" alt="Mariam Tahayekt" onerror="this.src='https://via.placeholder.com/320x380?text=Mariam+Tahayekt'">
+                    <img src="../public/image/mariam.jpg" alt="Mariam Tahayekt">
                 </div>
             </div>
         </div>
@@ -961,7 +961,7 @@ header("Content-Type: text/html; charset=UTF-8");
                 <!-- TD 1 (Image Preview) -->
                 <div class="td-card">
                     <!-- Relative link to public/image/td1.jpeg -->
-                    <img src="../public/image/td1.jpeg" alt="TD 1" class="td-preview-img" onerror="this.src='https://via.placeholder.com/400x180?text=Aper%C3%A7u+TD+1'">
+                    <img src="../public/image/td1.jpg" alt="TD 1" class="td-preview-img" onerror="this.src='https://via.placeholder.com/400x180?text=Aper%C3%A7u+TD+1'">
                     <div class="td-body">
                         <div class="td-type">Exercice Pratique / Image</div>
                         <h3 class="td-title">TD 1 — Structure & Styles</h3>
