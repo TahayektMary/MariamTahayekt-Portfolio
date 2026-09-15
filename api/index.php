@@ -777,7 +777,7 @@ header("Content-Type: text/html; charset=UTF-8");
             <div class="hero-image-wrapper">
                 <div class="hero-image-card">
                     <!-- Relative route pointing directly to public/image/mariam.jpg -->
-                    <img src="../public/image/mariam.jpg" alt="Mariam Tahayekt">
+                    <img src="/public/image/mariam.jpg" alt="Mariam Tahayekt">
                 </div>
             </div>
         </div>
