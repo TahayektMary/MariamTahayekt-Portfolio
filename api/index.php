@@ -1,5 +1,4 @@
 <?php
-// Header configuration for clean rendering
 header("Content-Type: text/html; charset=UTF-8");
 ?>
 <!DOCTYPE html>
@@ -84,6 +83,7 @@ header("Content-Type: text/html; charset=UTF-8");
         .badge {
             display: inline-flex;
             align-items: center;
+            gap: 0.4rem;
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
             font-size: 0.85rem;
@@ -172,7 +172,7 @@ header("Content-Type: text/html; charset=UTF-8");
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 1.8rem;
             list-style: none;
         }
 
@@ -379,7 +379,7 @@ header("Content-Type: text/html; charset=UTF-8");
             color: var(--primary);
         }
 
-        /* --- Projects Section --- */
+        /* --- Projects & Cards Section --- */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -447,7 +447,7 @@ header("Content-Type: text/html; charset=UTF-8");
             font-weight: 600;
         }
 
-        /* --- TD & Travaux Pratiques Section --- */
+        /* --- TD Section --- */
         .td-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -505,6 +505,7 @@ header("Content-Type: text/html; charset=UTF-8");
         .td-actions {
             display: flex;
             gap: 0.75rem;
+            flex-wrap: wrap;
         }
 
         /* --- Timeline Section --- */
@@ -746,6 +747,7 @@ header("Content-Type: text/html; charset=UTF-8");
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
+                <li><a href="#mini-projets">Mini-Projets</a></li>
                 <li><a href="#td">TD & TP</a></li>
                 <li><a href="#timeline">Parcours</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -757,7 +759,7 @@ header("Content-Type: text/html; charset=UTF-8");
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="badge"><i class="fa-solid fa-circle-dot mr-1"></i> Disponible pour stage / projets</span>
+                <span class="badge"><i class="fa-solid fa-circle-dot"></i> Disponible pour stage / projets</span>
                 <h1>Mariam Tahayekt</h1>
                 <div class="hero-subtitle">Étudiante en Développement Digital</div>
                 <p class="hero-description">
@@ -765,8 +767,7 @@ header("Content-Type: text/html; charset=UTF-8");
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> Voir mes projets</a>
-                    <!-- Ensure relative link to CV inside public/doc/ -->
-                    <a href="../public/doc/CV-Mariam-Tahayekt.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
+                    <a href="/public/doc/CV-Mariam-Tahayekt.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
                 </div>
                 <div class="social-links">
                     <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -776,8 +777,7 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
             <div class="hero-image-wrapper">
                 <div class="hero-image-card">
-                    <!-- Relative route pointing directly to public/image/mariam.jpg -->
-                    <img src="/public/image/mariam.jpg" alt="Mariam Tahayekt">
+                    <img src="/public/image/mariam.jpg" alt="Mariam Tahayekt" onerror="this.src='https://via.placeholder.com/320x380?text=Mariam+Tahayekt'">
                 </div>
             </div>
         </div>
@@ -894,7 +894,7 @@ header("Content-Type: text/html; charset=UTF-8");
         <div class="container">
             <div class="section-title">
                 <h2>Projets Réalisés</h2>
-                <p>Une sélection de mes travaux récents</p>
+                <p>Une sélection de mes travaux récents hébergés sur GitHub</p>
             </div>
             <div class="projects-grid">
                 
@@ -910,13 +910,17 @@ header("Content-Type: text/html; charset=UTF-8");
                             <span class="tag">JavaScript</span>
                             <span class="tag">CSS3</span>
                         </div>
-                        <a href="#" class="btn btn-secondary btn-sm" style="margin-top:auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Voir le projet</a>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <a href="https://github.com/mariamtahayekt/QuickAnnonces" target="_blank" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                                <i class="fa-brands fa-github"></i> Voir sur GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Projet 2 -->
                 <div class="project-card">
-                    <img src="../public/image/mariam.jpg" alt="Portfolio Personnel" class="project-img" style="object-position: top;">
+                    <img src="/public/image/mariam.jpg" alt="Portfolio Personnel" class="project-img" style="object-position: top;">
                     <div class="project-content">
                         <h3 class="project-title">Portfolio Personnel</h3>
                         <p class="project-desc">Site vitrine professionnel modern, performant et entièrement responsive, hébergé sur Vercel.</p>
@@ -926,11 +930,15 @@ header("Content-Type: text/html; charset=UTF-8");
                             <span class="tag">PHP</span>
                             <span class="tag">Vercel</span>
                         </div>
-                        <a href="#" class="btn btn-secondary btn-sm" style="margin-top:auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Voir le projet</a>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <a href="https://github.com/mariamtahayekt/Portfolio" target="_blank" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                                <i class="fa-brands fa-github"></i> Voir sur GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Projet 3 (Future project placeholder) -->
+                <!-- Projet 3 -->
                 <div class="project-card">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Application Web" class="project-img">
                     <div class="project-content">
@@ -941,7 +949,11 @@ header("Content-Type: text/html; charset=UTF-8");
                             <span class="tag">HTML/CSS</span>
                             <span class="tag">Local storage</span>
                         </div>
-                        <a href="#" class="btn btn-secondary btn-sm" style="margin-top:auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Voir le projet</a>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <a href="https://github.com/mariamtahayekt" target="_blank" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                                <i class="fa-brands fa-github"></i> Voir sur GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -949,8 +961,73 @@ header("Content-Type: text/html; charset=UTF-8");
         </div>
     </section>
 
-    <!-- 5. Mes TD & Travaux Pratiques Section -->
-    <section id="td" class="section" style="background: #f1f5f9;">
+    <!-- 5. Mini-projets & Documentations Section -->
+    <section id="mini-projets" class="section" style="background: #f1f5f9;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mini-projets & Documentations</h2>
+                <p>Documents techniques, analyses UML et rapports d'applications web</p>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Card Document UML Immobilière -->
+                <div class="project-card">
+                    <div style="height: 160px; background: linear-gradient(135deg, var(--bg-dark), #1e293b); display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                        <i class="fa-solid fa-diagram-project" style="font-size: 3.5rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="badge" style="width: fit-content;"><i class="fa-solid fa-file-pdf"></i> Documentation / UML</span>
+                        <h3 class="project-title">Atelier UML — Agence Immobilière</h3>
+                        <p class="project-desc">
+                            Conception et modélisation UML complète pour une application web de gestion immobilière (diagrammes de classes, cas d'utilisation et de séquences).
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">UML</span>
+                            <span class="tag">Conception Web</span>
+                            <span class="tag">Analyse</span>
+                        </div>
+                        
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto; flex-wrap: wrap;">
+                            <a href="/public/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-eye"></i> Consulter
+                            </a>
+                            <a href="/public/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" download="Tahayekt_Mariam_Atelier_UML_immobiliere.pdf" class="btn btn-secondary btn-sm">
+                                <i class="fa-solid fa-download"></i> Télécharger DOC
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Futurs Mini-projets -->
+                <div class="project-card">
+                    <div style="height: 160px; background: linear-gradient(135deg, var(--bg-dark), #1e293b); display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                        <i class="fa-solid fa-laptop-code" style="font-size: 3.5rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="badge" style="width: fit-content;"><i class="fa-solid fa-code"></i> Application Web</span>
+                        <h3 class="project-title">Mini-Projet Application Web</h3>
+                        <p class="project-desc">
+                            Rapport technique et cahier des charges d'une application web dynamique avec architecture MVC et base de données.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Documentation</span>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <a href="#" class="btn btn-secondary btn-sm" style="opacity: 0.6; pointer-events: none;">
+                                <i class="fa-solid fa-clock"></i> En cours de rédaction
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TD & Travaux Pratiques Section -->
+    <section id="td" class="section">
         <div class="container">
             <div class="section-title">
                 <h2>Mes TD & Travaux Pratiques</h2>
@@ -958,22 +1035,21 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
             <div class="td-grid">
                 
-                <!-- TD 1 (Image Preview) -->
+                <!-- TD 1 (Image) -->
                 <div class="td-card">
-                    <!-- Relative link to public/image/td1.jpeg -->
-                    <img src="../public/image/td1.jpg" alt="TD 1" class="td-preview-img" onerror="this.src='https://via.placeholder.com/400x180?text=Aper%C3%A7u+TD+1'">
+                    <img src="/public/image/td1.jpeg" alt="TD 1" class="td-preview-img" onerror="this.src='https://via.placeholder.com/400x180?text=Aper%C3%A7u+TD+1'">
                     <div class="td-body">
                         <div class="td-type">Exercice Pratique / Image</div>
                         <h3 class="td-title">TD 1 — Structure & Styles</h3>
                         <p class="td-desc">Intégration d'une maquette responsive complète avec HTML5 et CSS Grid.</p>
                         <div class="td-actions">
-                            <a href="../public/image/td1.jpeg" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-eye"></i> Voir le TD</a>
-                            <a href="../public/image/td1.jpeg" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> Télécharger</a>
+                            <a href="/public/image/td1.jpeg" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-eye"></i> Voir le TD</a>
+                            <a href="/public/image/td1.jpeg" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> Télécharger</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Document 1 (PDF) -->
+                <!-- Document PDF 1 -->
                 <div class="td-card">
                     <div style="height:180px; background:var(--bg-dark); display:flex; align-items:center; justify-content:center; color:var(--accent);">
                         <i class="fa-solid fa-file-pdf" style="font-size: 3.5rem;"></i>
@@ -983,14 +1059,13 @@ header("Content-Type: text/html; charset=UTF-8");
                         <h3 class="td-title">TD 2 — Algorithmique & SQL</h3>
                         <p class="td-desc">Exercices pratiques sur la conception de bases de données et requêtes SQL complexes.</p>
                         <div class="td-actions">
-                            <!-- Relative link to public/doc/ PDF file -->
-                            <a href="../public/doc/TD2-SQL.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Ouvrir</a>
-                            <a href="../public/doc/TD2-SQL.pdf" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> Télécharger</a>
+                            <a href="/public/doc/TD2-SQL.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Ouvrir</a>
+                            <a href="/public/doc/TD2-SQL.pdf" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> Télécharger</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Document 2 (PDF) -->
+                <!-- Document PDF 2 -->
                 <div class="td-card">
                     <div style="height:180px; background:var(--bg-dark); display:flex; align-items:center; justify-content:center; color:var(--accent);">
                         <i class="fa-solid fa-file-code" style="font-size: 3.5rem;"></i>
@@ -1000,8 +1075,8 @@ header("Content-Type: text/html; charset=UTF-8");
                         <h3 class="td-title">TP 1 — Dynamic Forms PHP</h3>
                         <p class="td-desc">Mise en place de formulaires sécurisés avec validation des données côté serveur en PHP.</p>
                         <div class="td-actions">
-                            <a href="../public/doc/TP1-PHP.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Ouvrir</a>
-                            <a href="../public/doc/TP1-PHP.pdf" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> Télécharger</a>
+                            <a href="/public/doc/TP1-PHP.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Ouvrir</a>
+                            <a href="/public/doc/TP1-PHP.pdf" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> Télécharger</a>
                         </div>
                     </div>
                 </div>
@@ -1010,8 +1085,8 @@ header("Content-Type: text/html; charset=UTF-8");
         </div>
     </section>
 
-    <!-- 6. Parcours / Formation Section -->
-    <section id="timeline" class="section">
+    <!-- 7. Parcours / Formation Section -->
+    <section id="timeline" class="section" style="background: #f1f5f9;">
         <div class="container">
             <div class="section-title">
                 <h2>Parcours & Formation</h2>
@@ -1041,8 +1116,8 @@ header("Content-Type: text/html; charset=UTF-8");
         </div>
     </section>
 
-    <!-- 7. Contact Section -->
-    <section id="contact" class="section" style="background: #f1f5f9;">
+    <!-- 8. Contact Section -->
+    <section id="contact" class="section">
         <div class="container">
             <div class="section-title">
                 <h2>Me Contacter</h2>
@@ -1099,7 +1174,7 @@ header("Content-Type: text/html; charset=UTF-8");
         </div>
     </section>
 
-    <!-- 8. Footer -->
+    <!-- 9. Footer -->
     <footer>
         <div class="container">
             <p>© 2026 Mariam Tahayekt — Tous droits réservés.</p>
@@ -1108,7 +1183,6 @@ header("Content-Type: text/html; charset=UTF-8");
 
     <!-- Client-Side JavaScript -->
     <script>
-        // Mobile Navigation Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
 
@@ -1124,7 +1198,6 @@ header("Content-Type: text/html; charset=UTF-8");
             }
         });
 
-        // Close menu when clicking link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
