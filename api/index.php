@@ -767,7 +767,7 @@ header("Content-Type: text/html; charset=UTF-8");
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> Voir mes projets</a>
-                    <a href="/doc/CV-Mariam-Tahayekt.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
+                    <a href="/doc/TAHAYEKT MARIAM CV .pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
                 </div>
                 <div class="social-links">
                     <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
