@@ -988,10 +988,10 @@ header("Content-Type: text/html; charset=UTF-8");
                         </div>
                         
                         <div style="display: flex; gap: 0.5rem; margin-top: auto; flex-wrap: wrap;">
-                            <a href="/doc/Tahayekt_Mariam_Atelier_UML_immobiliere.pdf" target="_blank" class="btn btn-primary btn-sm">
+                            <a href="/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" target="_blank" class="btn btn-primary btn-sm">
                                 <i class="fa-solid fa-eye"></i> Consulter
                             </a>
-                            <a href="/doc/Tahayekt_Mariam_Atelier_UML_immobiliere.pdf" download="Tahayekt_Mariam_Atelier_UML_immobiliere.pdf" class="btn btn-secondary btn-sm">
+                            <a href="/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" download="Tahayekt_Mariam_Atelier UML_immobilière.pdf" class="btn btn-secondary btn-sm">
                                 <i class="fa-solid fa-download"></i> Télécharger DOC
                             </a>
                         </div>
