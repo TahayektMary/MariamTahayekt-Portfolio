@@ -988,10 +988,10 @@ header("Content-Type: text/html; charset=UTF-8");
                         </div>
                         
                         <div style="display: flex; gap: 0.5rem; margin-top: auto; flex-wrap: wrap;">
-                            <a href="/public/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" target="_blank" class="btn btn-primary btn-sm">
+                            <a href="../public/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" target="_blank" class="btn btn-primary btn-sm">
                                 <i class="fa-solid fa-eye"></i> Consulter
                             </a>
-                            <a href="/public/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" download="Tahayekt_Mariam_Atelier_UML_immobiliere.pdf" class="btn btn-secondary btn-sm">
+                            <a href="../public/doc/Tahayekt_Mariam_Atelier UML_immobilière.pdf" download="Tahayekt_Mariam_Atelier_UML_immobiliere.pdf" class="btn btn-secondary btn-sm">
                                 <i class="fa-solid fa-download"></i> Télécharger DOC
                             </a>
                         </div>
@@ -1186,7 +1186,7 @@ header("Content-Type: text/html; charset=UTF-8");
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
 
-        mobileMenuBtn.addEventListener('click', () => {
+ pushp       mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             const icon = mobileMenuBtn.querySelector('i');
             if(navLinks.classList.contains('active')) {
