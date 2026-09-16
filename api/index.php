@@ -1087,35 +1087,50 @@ header("Content-Type: text/html; charset=UTF-8");
 
     <!-- 7. Parcours / Formation Section -->
     <section id="timeline" class="section" style="background: #f1f5f9;">
-        <div class="container">
-            <div class="section-title">
-                <h2>Parcours & Formation</h2>
-                <p>Mon cheminement académique et mes étapes d'apprentissage</p>
-            </div>
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024 — Présent</div>
-                        <h3 class="timeline-title">Formation en Développement Digital</h3>
-                        <p class="timeline-subtitle">Spécialisation Développement Web & Mobile</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 — 2024</div>
-                        <h3 class="timeline-title">Baccalauréat Scientifique</h3>
-                        <p class="timeline-subtitle">Option Sciences Physiques — Mention Bien</p>
-                    </div>
-                </div>
-
-            </div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Parcours & Formation</h2>
+            <p>Mon cheminement académique et mes étapes d'apprentissage</p>
         </div>
-    </section>
 
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 — Présent</div>
+                    <h3 class="timeline-title">Formation en Développement Digital</h3>
+                    <p class="timeline-subtitle">
+                        Spécialisation Développement Web & Mobile
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025</div>
+                    <h3 class="timeline-title">Certificat en Développement Digital</h3>
+                    <p class="timeline-subtitle">
+                        Centre Digital Solicode — Tanger
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 — 2024</div>
+                    <h3 class="timeline-title">Baccalauréat Scientifique</h3>
+                    <p class="timeline-subtitle">
+                        Option Sciences Physiques — Mention Bien
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <!-- 8. Contact Section -->
     <section id="contact" class="section">
         <div class="container">
