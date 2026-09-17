@@ -777,7 +777,7 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
             <div class="hero-image-wrapper">
                 <div class="hero-image-card">
-                    <img src="/image/mariam.jpg" alt="Mariam Tahayekt" onerror="this.src='https://via.placeholder.com/320x380?text=Mariam+Tahayekt'">
+                    <img src="/image/mariam-image-pro.jpg" alt="Mariam Tahayekt" onerror="this.src='https://via.placeholder.com/320x380?text=Mariam+Tahayekt'">
                 </div>
             </div>
         </div>
@@ -920,7 +920,7 @@ header("Content-Type: text/html; charset=UTF-8");
 
                 <!-- Projet 2 -->
                 <div class="project-card">
-                    <img src="/image/mariam.jpg" alt="Portfolio Personnel" class="project-img" style="object-position: top;">
+                    <img src="/image/mariam-image-pro.jpg" alt="Portfolio Personnel" class="project-img" style="object-position: top;">
                     <div class="project-content">
                         <h3 class="project-title">Portfolio Personnel</h3>
                         <p class="project-desc">Site vitrine professionnel modern, performant et entièrement responsive, hébergé sur Vercel.</p>
