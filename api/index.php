@@ -1065,6 +1065,27 @@ header("Content-Type: text/html; charset=UTF-8");
                     </div>
                 </div>
 
+                <!-- TP 3 — Figma -->
+                <div class="td-card">
+                    <div style="height:180px; background:linear-gradient(135deg, #0a0f1d, #1e293b); display:flex; align-items:center; justify-content:center; color:var(--accent);">
+                        <i class="fa-brands fa-figma" style="font-size: 4rem;"></i>
+                    </div>
+                    <div class="td-body">
+                        <div class="td-type">Travail Pratique / Figma</div>
+                        <h3 class="td-title">TP(3) FIGMA</h3>
+                        <p class="td-desc">Conception d'une interface utilisateur moderne avec Figma, incluant la création de maquettes, la mise en page et le travail sur l'expérience utilisateur (UI/UX).</p>
+                        <div class="tech-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Maquettage</span>
+                        </div>
+                        <div class="td-actions">
+                            <a href="/doc/TP3-FIGMA.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Ouvrir</a>
+                            <a href="/doc/TP3-FIGMA.pdf" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Document PDF 2 -->
                 <div class="td-card">
                     <div style="height:180px; background:var(--bg-dark); display:flex; align-items:center; justify-content:center; color:var(--accent);">
