@@ -1221,6 +1221,68 @@ header("Content-Type: text/html; charset=UTF-8");
 
             </div>
 
+
+            <!-- MINI PROJET 3 — ATELIER 1 GESTION DE PROJET -->
+
+            <div class="project-card">
+
+                <div style="
+                    height:160px;
+                    background:linear-gradient(135deg,#0a0f1d,#1e293b);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:var(--accent);
+                ">
+                    <i class="fa-solid fa-diagram-project"
+                       style="font-size:3.5rem;"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="badge">
+                        <i class="fa-solid fa-file-code"></i>
+                        Atelier / Gestion de projet
+                    </span>
+
+                    <h3 class="project-title">
+                        Atelier-1 — Gestion de projet
+                    </h3>
+
+                    <p class="project-desc">
+                        Atelier pratique consacré à la gestion de projet,
+                        à la planification et à la réalisation des exercices.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span class="tag">Gestion de projet</span>
+                        <span class="tag">Planification</span>
+                        <span class="tag">PERT</span>
+                    </div>
+
+                    <div class="td-actions">
+
+                        <a href="/doc/Atelier-1%20%E2%80%94%20Gestion%20de%20projet.php"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+                            <i class="fa-solid fa-folder-open"></i>
+                            Ouvrir
+                        </a>
+
+                        <a href="/doc/Atelier-1%20%E2%80%94%20Gestion%20de%20projet.php"
+                           download="Atelier-1 — Gestion de projet.php"
+                           class="btn btn-secondary btn-sm">
+                            <i class="fa-solid fa-download"></i>
+                            Télécharger
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
 
     </div>
@@ -1247,54 +1309,7 @@ header("Content-Type: text/html; charset=UTF-8");
 
         <div class="td-grid">
 
-
-            <!-- TD 1 -->
-
-            <div class="td-card">
-
-                <img
-                    src="/image/td1.jpeg"
-                    alt="TD 1"
-                    class="td-preview-img"
-                    onerror="this.src='https://via.placeholder.com/400x180?text=TD+1'"
-                >
-
-                <div class="td-body">
-
-                    <div class="td-type">
-                        Exercice Pratique / Image
-                    </div>
-
-                    <h3 class="td-title">
-                        TD 1 — Structure & Styles
-                    </h3>
-
-                    <p class="td-desc">
-                        Intégration d'une maquette responsive complète
-                        avec HTML5 et CSS Grid.
-                    </p>
-
-                    <div class="td-actions">
-
-                        <a href="/image/td1.jpeg"
-                           target="_blank"
-                           class="btn btn-primary btn-sm">
-                            <i class="fa-solid fa-eye"></i>
-                            Voir le TD
-                        </a>
-
-                        <a href="/image/td1.jpeg"
-                           download
-                           class="btn btn-secondary btn-sm">
-                            <i class="fa-solid fa-download"></i>
-                            Télécharger
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <!-- TD 2 -->
 
 
             <!-- TD 2 -->
@@ -1490,59 +1505,6 @@ header("Content-Type: text/html; charset=UTF-8");
 
             </div>
 
-
-            <!-- TP 1 PHP -->
-
-            <div class="td-card">
-
-                <div style="
-                    height:180px;
-                    background:var(--bg-dark);
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    color:var(--accent);
-                ">
-                    <i class="fa-solid fa-file-code"
-                       style="font-size:3.5rem;"></i>
-                </div>
-
-                <div class="td-body">
-
-                    <div class="td-type">
-                        Document PDF / Rapport
-                    </div>
-
-                    <h3 class="td-title">
-                        TP 1 — Dynamic Forms PHP
-                    </h3>
-
-                    <p class="td-desc">
-                        Mise en place de formulaires sécurisés avec
-                        validation des données côté serveur en PHP.
-                    </p>
-
-                    <div class="td-actions">
-
-                        <a href="/doc/TP1-PHP.pdf"
-                           target="_blank"
-                           class="btn btn-primary btn-sm">
-                            <i class="fa-solid fa-folder-open"></i>
-                            Ouvrir
-                        </a>
-
-                        <a href="/doc/TP1-PHP.pdf"
-                           download
-                           class="btn btn-secondary btn-sm">
-                            <i class="fa-solid fa-download"></i>
-                            Télécharger
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
 
 
         </div>
