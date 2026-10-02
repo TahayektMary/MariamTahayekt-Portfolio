@@ -1424,6 +1424,73 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
 
 
+            <!-- ATELIER 1 — GESTION DE PROJET -->
+
+            <div class="td-card">
+
+                <div style="
+                    height:180px;
+                    background:var(--bg-dark);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:var(--accent);
+                ">
+                    <i class="fa-solid fa-diagram-project"
+                       style="font-size:3.5rem;"></i>
+                </div>
+
+                <div class="td-body">
+
+                    <div class="td-type">
+                        Document PDF / Atelier
+                    </div>
+
+                    <h3 class="td-title">
+                        Atelier-1 — Gestion de projet
+                    </h3>
+
+                    <p class="td-desc">
+                        Atelier pratique consacré à la gestion de projet,
+                        à la planification et à la réalisation des exercices.
+                    </p>
+
+                    <div class="tech-tags">
+
+                        <span class="tag">Gestion de projet</span>
+                        <span class="tag">Planification</span>
+                        <span class="tag">PERT</span>
+
+                    </div>
+
+                    <div class="td-actions">
+
+                        <a href="/doc/Atelier-1-gestion-de-projet.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+
+                            <i class="fa-solid fa-folder-open"></i>
+                            Ouvrir
+
+                        </a>
+
+                        <a href="/doc/Atelier-1-gestion-de-projet.pdf"
+                           download="Atelier-1-gestion-de-projet.pdf"
+                           class="btn btn-secondary btn-sm">
+
+                            <i class="fa-solid fa-download"></i>
+                            Télécharger
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
             <!-- TP 1 PHP -->
 
             <div class="td-card">
