@@ -1,4 +1,3 @@
-```php
 <?php
 header("Content-Type: text/html; charset=UTF-8");
 ?>
@@ -1311,9 +1310,6 @@ header("Content-Type: text/html; charset=UTF-8");
 
             <!-- TD 2 -->
 
-
-            <!-- TD 2 -->
-
             <div class="td-card">
 
                 <div style="
@@ -1366,9 +1362,7 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
 
 
-            <!-- ========================================= -->
-            <!-- TP 3 FIGMA - CHEMIN CORRIGÉ -->
-            <!-- ========================================= -->
+            <!-- TP 3 FIGMA -->
 
             <div class="td-card">
 
@@ -1411,7 +1405,6 @@ header("Content-Type: text/html; charset=UTF-8");
 
                     <div class="td-actions">
 
-                        <!-- OUVRIR LE PDF -->
                         <a href="/doc/TP3-FIGMA.pdf"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -1422,7 +1415,6 @@ header("Content-Type: text/html; charset=UTF-8");
 
                         </a>
 
-                        <!-- TÉLÉCHARGER LE PDF -->
                         <a href="/doc/TP3-FIGMA.pdf"
                            download="TP3-FIGMA.pdf"
                            class="btn btn-secondary btn-sm">
@@ -1506,6 +1498,70 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
 
 
+            <!-- ATELIER 6 — GESTION DES STAGIAIRES -->
+
+            <div class="td-card">
+
+                <div style="
+                    height:180px;
+                    background:linear-gradient(135deg,#0a0f1d,#1e293b);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:var(--accent);
+                ">
+                    <i class="fa-solid fa-users"
+                       style="font-size:3.5rem;"></i>
+                </div>
+
+                <div class="td-body">
+
+                    <div class="td-type">
+                        Document PDF / Atelier
+                    </div>
+
+                    <h3 class="td-title">
+                        Atelier-6 — Gestion des Stagiaires
+                    </h3>
+
+                    <p class="td-desc">
+                        Présentation de l'atelier consacré à la gestion
+                        des stagiaires : conception et réalisation.
+                    </p>
+
+                    <div class="tech-tags">
+
+                        <span class="tag">Gestion des stagiaires</span>
+                        <span class="tag">Présentation</span>
+
+                    </div>
+
+                    <div class="td-actions">
+
+                        <a href="/doc/Gestion-Stagiaires-Presentation.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+
+                            <i class="fa-solid fa-folder-open"></i>
+                            Ouvrir
+
+                        </a>
+
+                        <a href="/doc/Gestion-Stagiaires-Presentation.pdf"
+                           download="Gestion-Stagiaires-Presentation.pdf"
+                           class="btn btn-secondary btn-sm">
+
+                            <i class="fa-solid fa-download"></i>
+                            Télécharger
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
