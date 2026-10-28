@@ -1498,6 +1498,138 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
 
 
+            <!-- ATELIER 2 — GESTION DE PROJET AGILE -->
+
+            <div class="td-card">
+
+                <div style="
+                    height:180px;
+                    background:linear-gradient(135deg,#0a0f1d,#1e293b);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:var(--accent);
+                ">
+                    <i class="fa-solid fa-list-check"
+                       style="font-size:3.5rem;"></i>
+                </div>
+
+                <div class="td-body">
+
+                    <div class="td-type">
+                        Document PDF / Atelier
+                    </div>
+
+                    <h3 class="td-title">
+                        Atelier-2 — Gestion de projet Agile
+                    </h3>
+
+                    <p class="td-desc">
+                        Agile et Scrum appliqués au projet Quick Annonce : questions de cours, User Stories, Product Backlog et Sprint.
+                    </p>
+
+                    <div class="tech-tags">
+
+                        <span class="tag">Agile</span>
+                        <span class="tag">Scrum</span>
+                        <span class="tag">Jira</span>
+
+                    </div>
+
+                    <div class="td-actions">
+
+                        <a href="/doc/Atelier2-Correction-Partie1.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+
+                            <i class="fa-solid fa-folder-open"></i>
+                            Ouvrir
+
+                        </a>
+
+                        <a href="/doc/Atelier2-Correction-Partie1.pdf"
+                           download="Atelier2-Correction-Partie1.pdf"
+                           class="btn btn-secondary btn-sm">
+
+                            <i class="fa-solid fa-download"></i>
+                            Télécharger
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ATELIER 3 — LES BASES DE GIT -->
+
+            <div class="td-card">
+
+                <div style="
+                    height:180px;
+                    background:linear-gradient(135deg,#0a0f1d,#1e293b);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:var(--accent);
+                ">
+                    <i class="fa-brands fa-git-alt"
+                       style="font-size:3.5rem;"></i>
+                </div>
+
+                <div class="td-body">
+
+                    <div class="td-type">
+                        Document PDF / Atelier
+                    </div>
+
+                    <h3 class="td-title">
+                        Atelier-3 — Les bases de Git
+                    </h3>
+
+                    <p class="td-desc">
+                        Création d'un dépôt, staging, commits, historique et gestion de plusieurs fichiers avec Git.
+                    </p>
+
+                    <div class="tech-tags">
+
+                        <span class="tag">Git</span>
+                        <span class="tag">Versionning</span>
+                        <span class="tag">Commits</span>
+
+                    </div>
+
+                    <div class="td-actions">
+
+                        <a href="/doc/Atelier3-Git-Correction.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+
+                            <i class="fa-solid fa-folder-open"></i>
+                            Ouvrir
+
+                        </a>
+
+                        <a href="/doc/Atelier3-Git-Correction.pdf"
+                           download="Atelier3-Git-Correction.pdf"
+                           class="btn btn-secondary btn-sm">
+
+                            <i class="fa-solid fa-download"></i>
+                            Télécharger
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
             <!-- ATELIER 6 — GESTION DES STAGIAIRES -->
 
             <div class="td-card">
