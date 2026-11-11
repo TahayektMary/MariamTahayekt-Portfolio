@@ -1498,6 +1498,73 @@ header("Content-Type: text/html; charset=UTF-8");
             </div>
 
 
+            <!-- ATELIER 1 — GESTION DE DONNÉES (RAPPORT SQL) -->
+
+            <div class="td-card">
+
+                <div style="
+                    height:180px;
+                    background:linear-gradient(135deg,#0a0f1d,#1e293b);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:var(--accent);
+                ">
+                    <i class="fa-solid fa-database"
+                       style="font-size:3.5rem;"></i>
+                </div>
+
+                <div class="td-body">
+
+                    <div class="td-type">
+                        Document PDF / Atelier
+                    </div>
+
+                    <h3 class="td-title">
+                        Atelier 1 — Gestion de données
+                    </h3>
+
+                    <p class="td-desc">
+                        Rapport de l'atelier consacré à la gestion de
+                        données : conception de la base et requêtes SQL.
+                    </p>
+
+                    <div class="tech-tags">
+
+                        <span class="tag">SQL</span>
+                        <span class="tag">Base de données</span>
+                        <span class="tag">Rapport</span>
+
+                    </div>
+
+                    <div class="td-actions">
+
+                        <a href="/doc/Rapport_Atelier_SQL.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+
+                            <i class="fa-solid fa-folder-open"></i>
+                            Ouvrir
+
+                        </a>
+
+                        <a href="/doc/Rapport_Atelier_SQL.pdf"
+                           download="Rapport_Atelier_SQL.pdf"
+                           class="btn btn-secondary btn-sm">
+
+                            <i class="fa-solid fa-download"></i>
+                            Télécharger
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
             <!-- ATELIER 2 — GESTION DE PROJET AGILE -->
 
             <div class="td-card">
