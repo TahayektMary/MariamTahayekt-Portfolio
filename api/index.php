@@ -29,7 +29,7 @@ $categories = [
              'fa-solid fa-gears', ['MySQL', 'Triggers', 'SQL'], 'Rapport_Atelier6_Triggers_MySQL.pdf'],
             ['Examen de fin de formation — Gestion des données (SQL)', 'Document PDF / Examen corrigé',
              'Correction de l\'examen de fin de formation : conception de la base, requêtes SQL et justification des solutions.',
-             'fa-solid fa-file-circle-check', ['SQL', 'Examen', 'Correction'], 'Correction_Examen_Fin_Formation_Gestion_Donnees_SQL.pdf'],
+             'fa-solid fa-file-circle-check', ['SQL', 'Examen', 'Correction'], 'Corriger Examen de fin de formation — Gestion des données (SQL).pdf'],
         ],
     ],
     [
@@ -38,10 +38,10 @@ $categories = [
         'items' => [
             ['Atelier 1 — MongoDB', 'Document PDF / Atelier',
              'Rapport de l\'atelier d\'initiation à MongoDB : collections, documents et opérations CRUD.',
-             'fa-solid fa-leaf', ['MongoDB', 'NoSQL', 'CRUD'], 'Rapport_Atelier1_MongoDB.pdf'],
+             'fa-solid fa-leaf', ['MongoDB', 'NoSQL', 'CRUD'], 'rapport_atelier1_mongodb (1).pdf'],
             ['Atelier 2 — MongoDB', 'Document PDF / Atelier',
              'Rapport de l\'atelier consacré aux requêtes avancées MongoDB : filtres, agrégations et manipulation des données.',
-             'fa-solid fa-leaf', ['MongoDB', 'NoSQL', 'Agrégation'], 'Rapport_Atelier2_MongoDB.pdf'],
+             'fa-solid fa-leaf', ['MongoDB', 'NoSQL', 'Agrégation'], 'rapport_atelier2_mongodb.pdf'],
         ],
     ],
     [
@@ -74,7 +74,7 @@ $categories = [
              'fa-brands fa-figma', ['Figma', 'UI/UX', 'Maquettage'], 'TP3-FIGMA.pdf'],
             ['Maquette QuickAnnonces — UI/UX Design', 'Document PDF / Maquette',
              'Maquettes de l\'application QuickAnnonces : conception des interfaces, parcours utilisateur et expérience utilisateur.',
-             'fa-solid fa-pen-ruler', ['UI/UX', 'Maquettage', 'QuickAnnonces'], 'Maquette_QuickAnnonces_UI_UX_Design.pdf'],
+             'fa-solid fa-pen-ruler', ['UI/UX', 'Maquettage', 'QuickAnnonces'], 'maquette-QuickAnnonces — UI_UX Design.pdf'],
         ],
     ],
     [
