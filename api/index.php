@@ -1,11 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
 
-/* =====================================================================
-   DONNÉES — pour ajouter un atelier : copiez une ligne dans la bonne
-   catégorie (titre, type, description, icône, tags, fichier dans /doc)
-   ===================================================================== */
-
 $categories = [
     [
         'id' => 'bdd', 'name' => 'Base de données', 'icon' => 'fa-database',
@@ -32,6 +27,21 @@ $categories = [
             ['Atelier 6 — Triggers MySQL', 'Document PDF / Atelier',
              'Rapport pratique sur la création, la gestion et le test des déclencheurs (triggers) en MySQL.',
              'fa-solid fa-gears', ['MySQL', 'Triggers', 'SQL'], 'Rapport_Atelier6_Triggers_MySQL.pdf'],
+            ['Examen de fin de formation — Gestion des données (SQL)', 'Document PDF / Examen corrigé',
+             'Correction de l\'examen de fin de formation : conception de la base, requêtes SQL et justification des solutions.',
+             'fa-solid fa-file-circle-check', ['SQL', 'Examen', 'Correction'], 'Correction_Examen_Fin_Formation_Gestion_Donnees_SQL.pdf'],
+        ],
+    ],
+    [
+        'id' => 'mongodb', 'name' => 'NoSQL / MongoDB', 'icon' => 'fa-leaf',
+        'desc' => 'Bases de données orientées documents avec MongoDB',
+        'items' => [
+            ['Atelier 1 — MongoDB', 'Document PDF / Atelier',
+             'Rapport de l\'atelier d\'initiation à MongoDB : collections, documents et opérations CRUD.',
+             'fa-solid fa-leaf', ['MongoDB', 'NoSQL', 'CRUD'], 'Rapport_Atelier1_MongoDB.pdf'],
+            ['Atelier 2 — MongoDB', 'Document PDF / Atelier',
+             'Rapport de l\'atelier consacré aux requêtes avancées MongoDB : filtres, agrégations et manipulation des données.',
+             'fa-solid fa-leaf', ['MongoDB', 'NoSQL', 'Agrégation'], 'Rapport_Atelier2_MongoDB.pdf'],
         ],
     ],
     [
@@ -62,6 +72,9 @@ $categories = [
             ['TP(3) FIGMA', 'Travail Pratique / Figma',
              'Conception d\'une interface utilisateur moderne avec Figma : maquettes, mise en page et expérience utilisateur.',
              'fa-brands fa-figma', ['Figma', 'UI/UX', 'Maquettage'], 'TP3-FIGMA.pdf'],
+            ['Maquette QuickAnnonces — UI/UX Design', 'Document PDF / Maquette',
+             'Maquettes de l\'application QuickAnnonces : conception des interfaces, parcours utilisateur et expérience utilisateur.',
+             'fa-solid fa-pen-ruler', ['UI/UX', 'Maquettage', 'QuickAnnonces'], 'Maquette_QuickAnnonces_UI_UX_Design.pdf'],
         ],
     ],
     [
@@ -405,6 +418,7 @@ $totalDocs = array_sum(array_map(fn($c) => count($c['items']), $categories));
                 ['fa-brands fa-js', 'JavaScript', 'ES6+, DOM, Async/Fetch'],
                 ['fa-brands fa-php', 'PHP', 'Backend & API REST'],
                 ['fa-solid fa-database', 'SQL / MySQL', 'Conception, Requêtes, Procédures'],
+                ['fa-solid fa-leaf', 'MongoDB', 'NoSQL, Collections, Agrégation'],
                 ['fa-solid fa-diagram-project', 'UML', 'Modélisation & Diagrammes'],
                 ['fa-brands fa-git-alt', 'Git / GitHub', 'Versionning & Collaboration'],
                 ['fa-solid fa-mobile-screen', 'Responsive Design', 'Mobile First & Adaptive'],
